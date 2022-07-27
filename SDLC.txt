@@ -278,3 +278,22 @@ Types of VCS
 		even they can fully mirror the repository
 	=> The local repo contains all the files and metadata present in
 		the main reposoitory
+
+------------------------------------------------------------------------------------
+- GIT and GITHUB
+	- git commands
+		=> version - git --version	
+		=> to update new id --- git config --global user.name <user.name>
+		=> to update mail ----- git config --global user.emaail </email/>
+
+		=> command to make current directory as git directory	
+			- git init
+		=> command to mark untracked files
+			- git status
+		=> command to add tracker files
+			- git add #filename
+			or
+			- git add * ///or/// git add .
+		=> to commit 
+			-git commit -m "message"
+		
