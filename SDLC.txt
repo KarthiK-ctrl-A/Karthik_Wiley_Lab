@@ -243,10 +243,15 @@ IAAS - It is also known as cloud infrastructre services. It is responsible
 Ex - AWS-EC2, compute engine, etc
 
 
-PAAS - 
+PAAS - Platform as a service (PaaS) is a cloud computing model where a 
+third-party provider delivers hardware and software tools to users over
+ the internet. Usually, these tools are needed for application development.
 
 
-SAAS
+SAAS - Software-as-a-Service, or SaaS for short, is a cloud-based method of 
+providing software to users. SaaS users subscribe to an application rather than 
+purchasing it once and installing it. Users can log into and use a SaaS application 
+from any compatible device over the Internet. 
 
 
 =============================================================
