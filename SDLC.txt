@@ -304,3 +304,7 @@ Types of VCS
 		
 		=> to restore
 			- git restore "filename'
+		=> to know which branch
+			- git branch == * indicates current
+		=>git -b - create branch
+			  -checkout - goto that branch
