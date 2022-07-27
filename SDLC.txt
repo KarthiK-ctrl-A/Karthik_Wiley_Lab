@@ -1,0 +1,280 @@
+=========== 25 - 07- 2022 =================
+
+
+ - The software development life cycle is a structured
+process that enables the production of high quality, in
+the shortest possible production time
+
+- Planning -> analysis -> Design -> implementation ->
+
+	^--	Maintenance    <-
+
+FEASIBILITY ANALYSIS
+
+REQUIREMENT ANALYSIS
+
+- SRS - Software Requirement Specification
+  it contains requirements for the req of clients
+  2 types of req , funcitonal and non-function
+
+Functional req - they are tech features of project
+ ex - booking form, login form, profle etc
+
+Non-Functional req - which are indirect to consumner
+ ex - website to be reliable, fast, UI/UX should be nice
+etc which are indirectly related to project
+
+
+DESIGN
+
+ - 2 types - High levl and Low level
+
+HLD - talks about architecture or infrastructure of project
+LLD - talks about module level or detailed description
+of every module
+ - UML diagrams
+
+IMPLEMENTATION
+
+OOP - Object oriented programming
+- coding
+
+VERIFICATION / TESITNG
+
+ - Black Box, white Box, System, integration and Unit testing
+	user acceptance tesing
+
+MAINTENANCE / DEPLOYMENT 
+
+
+
+
+
+=======================================
+========================================
+========================================
+========================================
+=========================================
+======= 26 - 07 - 2022 ===================
+
+SDLC MODELS
+
+ - Waterfall model
+	req - design - impl - verifi - maintenance
+	- simple
+	- easy to implement
+	- suitable for small projects
+	- Not ideal for large/compkex softwares
+	- Each phase req lot of time
+
+ - Iterative Model
+	- same phases as waterfall , but repeatetive
+	  inception - req gathering,
+	  elaboration - design, 
+	  construction - implement and test, 
+	  transition - Maintenance & deployment 
+
+	- softwares are developed in small scale
+	- every build is a prototype or updated version/
+		new release of software
+	-  any change/ req can be incorporated in new cycle
+	-  risk can be identified early
+	-  defects can be identifies at early stage
+	-  product is divided in modules/chunks , and easy to manage
+
+ - Prototype Model
+	- req -> design -> Prototype -> eval -> refine -> final
+	- 
+  
+- spiral Model
+	- Risk Factors 
+		- Inadequate estimation of project time
+			difficult to estimate req time cost etc
+		- Unrealistic Schedule
+			may exceed delivery time in turn incrrease cost
+		- Unrealistic Budget
+			may depend on budget, time and effort
+		- Unclear Project Scope
+			may fail if goal is not understood
+		- Insufficient Project resources
+			may fail for insufficient tools, tech,etc
+
+	- Phases in spiral model
+	  	1 - objective
+	  	2 - risk analysis
+	  	3 - Engineering
+	  	4 - Evaluation
+ - AGILE - ability to respond to changes
+ - CHALLENGES IN SDLC
+	- management/schedule
+	- communication during initial phase [ with customer]
+	- Development
+	- Late request
+	- crunch time for testing software
+	  solution - Agile method
+
+===================================================================	
+
+AGILE METHOD - philosophy
+
+ - agile follows iterative and team based approach
+ - also known as cross functional team
+ - Objective of agile is to quickly deliver the product
+	with functional components
+ - Agile means ability to respond to changes [req of client]
+ - In agile development team directly interacts with customer
+ - in agile, each iteration lasts from 1-3 weeks 
+ - software is delivered in multiple increments
+ 
+==================================================================
+SCRUM - USED TO IMPLEMENT AGILE PHIL
+
+ - it is a subset of agile / implementation of agile
+ - it is a project managment system
+ - it is a lightweight process framework for agile development
+ - BENEFITS
+	 - increased quality of the deliverables
+	 - cope with changes
+	 - better estimates while spending less time 
+	 - more control of the peroject schedule and state
+ - scrum can control software and product development
+ - uses iterative incremental practice
+ - increases productivity
+ - it is not restricted to software development projects
+ - 
+
+-------------SCRUM MANIFESTO------------------------------------
+	
+	    AGILE                 OVER        SDLC
+
+ - individual and interaction   OVER   process and tools
+ - working software             OVER   comprehensive doc
+ - customer collaboration       OVER   contract negotiation
+ - Responding to changes        OVER   following a plan
+
+
+------------------SCRUM ROLES----------------------------------
+
+ - PRODUCT OWNER : product sponsor [who pays money]
+	=> decides what are features requires in software
+	=> decides relese dates, priority of features and budget
+
+ - SCRUM MASTER : typically a project manager/ team leader
+   	=> Responsible for enacting scrum values and practices
+   	=> Remove impedements, politics and keep everyone productive
+ 
+ - PROJECT TEAM : 5 - 10 members, varies from org to org, generally
+			cross functional, programer, UI/UX etc
+	=> No member is allowed to leave or change team during current
+	   iteration of development
+	=> 
+
+ - SPRINT : complete develpment lifecyclee of 1 iteration
+
+ - PRODUCT BACKLOG : list of features which are decided to 
+   be added in software in current lifecycle
+
+ - SPRINT BACKLOG : features that couldnt be added in project
+   in current iteration after sprint
+
+ - DAILY SCRUM MEETINGS
+	=> daily 15 min standup meeting
+	=> Not for problem solving
+	=> everyone from team is invited
+	=> only team member , owner, ,aster can talk
+	=> what you do ?, you will do ?, what are obstacles ?
+
+ - After each sprint, BURNDOWN chart is prepared
+     burn down - horozontal - slowly
+ 
+ - SPRINT REVIEW : happends at the end of sprint/ iteration
+	=> team explains, what i had accomplished during the sprint
+	=> Typically demo of the software is presented
+	=> 2-4 hrs of duration
+	=> whole team participates, all other members are also 
+		invited, ex: acc,sales, legal, finance etc
+	
+==================================================================
+
+CLOUD COMPUTING
+
+ - cloud computing is the delivery of computing services over the 
+   internet - storage, networking, servers, analytics, intelligence
+ - Cloud can be used for
+	- dev new apps
+	- storage, recovery etc
+	- host blogs, websites
+	- delivery of softwares on demand
+	- data analysis
+	- streaming videos
+	- Data Governance
+ - Benefits of Cloud Computing
+	- Cost
+	- Speed	
+	- enhances productivity
+	- reliability
+	- security
+ 
+
+----------------------------------------------------------------
+
+ - Hypervisor is required to host OS
+ - Types of hypervisors:
+	- Type 1:
+		=> Which run directly on hardware
+		=> VMware ESXI, XEN / Citrix
+	- Type 2:
+		=> instaalled on top of OS
+		=> VMware Fusion, Oracle VMware
+		
+
+===============================================================
+===============================================================
+====================== 27 - 07 - 2022 =========================
+===============================================================
+
+middle ware - between OS and apps software seving main purpose
+casssandra, mongodB, apache hive, oracle etc
+
+TYPES OF CLOUD SERVICES
+
+IAAS - It is also known as cloud infrastructre services. It is responsible
+ for managing applications data, middleware, and runtime environments.
+Ex - AWS-EC2, compute engine, etc
+
+
+PAAS - 
+
+
+SAAS
+
+
+=============================================================
+
+
+VCS - Version Control System
+ - It records changes to a file or set of files over tiem so that you
+can recall specific version later
+ - allows to work together
+ - VCS is a collection of software tools that help a team to manage 
+changes in source code.
+ - uses special kinds of DB to keep track of every modification
+ - Developers can compare earlier versins of code with the older version
+to fix the mistakes
+
+
+Types of VCS
+ - Localized
+	=> keeps local copies of the files
+  	=> if local computer crashes, everything is lost
+ - Centralized
+	=> These systems have single server that contains the versioned
+		files, ans clients chekout from central place
+	=> Too risk for network traffic, and if server is lost everything
+		is lost
+ - Distributed
+	=> the user has local copy of repository
+	=> the clients don't just checkout the latest snapshot of the files
+		even they can fully mirror the repository
+	=> The local repo contains all the files and metadata present in
+		the main reposoitory
