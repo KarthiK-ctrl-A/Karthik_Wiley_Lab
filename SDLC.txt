@@ -302,3 +302,7 @@ Types of VCS
 		=> to commit 
 			-git commit -m "message"
 		
+		=> to restore
+			- git restore "filename'
+
+	
