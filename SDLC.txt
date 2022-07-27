@@ -309,9 +309,3 @@ Types of VCS
 		=>git -b - create branch
 			  -checkout - goto that branch          ######production
 			
-
-
-
-
-
-			difference diference
