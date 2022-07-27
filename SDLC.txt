@@ -307,4 +307,11 @@ Types of VCS
 		=> to know which branch
 			- git branch == * indicates current
 		=>git -b - create branch
-			  -checkout - goto that branch
+			  -checkout - goto that branch          ######production
+			
+
+
+
+
+
+			difference diference
