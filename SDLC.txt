@@ -15,19 +15,19 @@ REQUIREMENT ANALYSIS
 
 - SRS - Software Requirement Specification
   it contains requirements for the req of clients
-  2 types of req , funcitonal and non-function
+  2 types of req , functional and non-function
 
 Functional req - they are tech features of project
- ex - booking form, login form, profle etc
+ ex - booking form, login form, profile etc
 
-Non-Functional req - which are indirect to consumner
+Non-Functional req - which are indirect to consumer
  ex - website to be reliable, fast, UI/UX should be nice
 etc which are indirectly related to project
 
 
 DESIGN
 
- - 2 types - High levl and Low level
+ - 2 types - High level and Low level
 
 HLD - talks about architecture or infrastructure of project
 LLD - talks about module level or detailed description
@@ -39,10 +39,10 @@ IMPLEMENTATION
 OOP - Object oriented programming
 - coding
 
-VERIFICATION / TESITNG
+VERIFICATION / TESTING
 
  - Black Box, white Box, System, integration and Unit testing
-	user acceptance tesing
+	user acceptance testing
 
 MAINTENANCE / DEPLOYMENT 
 
@@ -60,15 +60,15 @@ MAINTENANCE / DEPLOYMENT
 SDLC MODELS
 
  - Waterfall model
-	req - design - impl - verifi - maintenance
+	req - design - impl - verification - maintenance
 	- simple
 	- easy to implement
 	- suitable for small projects
-	- Not ideal for large/compkex softwares
+	- Not ideal for large/complex softwares
 	- Each phase req lot of time
 
  - Iterative Model
-	- same phases as waterfall , but repeatetive
+	- same phases as waterfall , but repetitive
 	  inception - req gathering,
 	  elaboration - design, 
 	  construction - implement and test, 
@@ -91,7 +91,7 @@ SDLC MODELS
 		- Inadequate estimation of project time
 			difficult to estimate req time cost etc
 		- Unrealistic Schedule
-			may exceed delivery time in turn incrrease cost
+			may exceed delivery time in turn increase cost
 		- Unrealistic Budget
 			may depend on budget, time and effort
 		- Unclear Project Scope
@@ -130,13 +130,13 @@ AGILE METHOD - philosophy
 SCRUM - USED TO IMPLEMENT AGILE PHIL
 
  - it is a subset of agile / implementation of agile
- - it is a project managment system
+ - it is a project management system
  - it is a lightweight process framework for agile development
  - BENEFITS
 	 - increased quality of the deliverables
 	 - cope with changes
 	 - better estimates while spending less time 
-	 - more control of the peroject schedule and state
+	 - more control of the project schedule and state
  - scrum can control software and product development
  - uses iterative incremental practice
  - increases productivity
@@ -157,11 +157,11 @@ SCRUM - USED TO IMPLEMENT AGILE PHIL
 
  - PRODUCT OWNER : product sponsor [who pays money]
 	=> decides what are features requires in software
-	=> decides relese dates, priority of features and budget
+	=> decides release dates, priority of features and budget
 
  - SCRUM MASTER : typically a project manager/ team leader
    	=> Responsible for enacting scrum values and practices
-   	=> Remove impedements, politics and keep everyone productive
+   	=> Remove impediments, politics and keep everyone productive
  
  - PROJECT TEAM : 5 - 10 members, varies from org to org, generally
 			cross functional, programer, UI/UX etc
@@ -169,12 +169,12 @@ SCRUM - USED TO IMPLEMENT AGILE PHIL
 	   iteration of development
 	=> 
 
- - SPRINT : complete develpment lifecyclee of 1 iteration
+ - SPRINT : complete development lifecycle of 1 iteration
 
  - PRODUCT BACKLOG : list of features which are decided to 
    be added in software in current lifecycle
 
- - SPRINT BACKLOG : features that couldnt be added in project
+ - SPRINT BACKLOG : features that couldn't be added in project
    in current iteration after sprint
 
  - DAILY SCRUM MEETINGS
@@ -185,9 +185,9 @@ SCRUM - USED TO IMPLEMENT AGILE PHIL
 	=> what you do ?, you will do ?, what are obstacles ?
 
  - After each sprint, BURNDOWN chart is prepared
-     burn down - horozontal - slowly
+     burn down - horizontal - slowly
  
- - SPRINT REVIEW : happends at the end of sprint/ iteration
+ - SPRINT REVIEW : happens at the end of sprint/ iteration
 	=> team explains, what i had accomplished during the sprint
 	=> Typically demo of the software is presented
 	=> 2-4 hrs of duration
@@ -224,7 +224,7 @@ CLOUD COMPUTING
 		=> Which run directly on hardware
 		=> VMware ESXI, XEN / Citrix
 	- Type 2:
-		=> instaalled on top of OS
+		=> installed on top of OS
 		=> VMware Fusion, Oracle VMware
 		
 
@@ -233,12 +233,12 @@ CLOUD COMPUTING
 ====================== 27 - 07 - 2022 =========================
 ===============================================================
 
-middle ware - between OS and apps software seving main purpose
-casssandra, mongodB, apache hive, oracle etc
+middle ware - between OS and apps software serving main purpose
+cassandra, mongodB, apache hive, oracle etc
 
 TYPES OF CLOUD SERVICES
 
-IAAS - It is also known as cloud infrastructre services. It is responsible
+IAAS - It is also known as cloud infrastructure services. It is responsible
  for managing applications data, middleware, and runtime environments.
 Ex - AWS-EC2, compute engine, etc
 
@@ -258,13 +258,13 @@ from any compatible device over the Internet.
 
 
 VCS - Version Control System
- - It records changes to a file or set of files over tiem so that you
+ - It records changes to a file or set of files over time so that you
 can recall specific version later
  - allows to work together
  - VCS is a collection of software tools that help a team to manage 
 changes in source code.
  - uses special kinds of DB to keep track of every modification
- - Developers can compare earlier versins of code with the older version
+ - Developers can compare earlier versions of code with the older version
 to fix the mistakes
 
 
@@ -274,7 +274,7 @@ Types of VCS
   	=> if local computer crashes, everything is lost
  - Centralized
 	=> These systems have single server that contains the versioned
-		files, ans clients chekout from central place
+		files, ans clients checkout from central place
 	=> Too risk for network traffic, and if server is lost everything
 		is lost
  - Distributed
@@ -282,14 +282,14 @@ Types of VCS
 	=> the clients don't just checkout the latest snapshot of the files
 		even they can fully mirror the repository
 	=> The local repo contains all the files and metadata present in
-		the main reposoitory
+		the main repository
 
 ------------------------------------------------------------------------------------
 - GIT and GITHUB
 	- git commands
 		=> version - git --version	
 		=> to update new id --- git config --global user.name <user.name>
-		=> to update mail ----- git config --global user.emaail </email/>
+		=> to update mail ----- git config --global user.email </email/>
 
 		=> command to make current directory as git directory	
 			- git init
@@ -304,5 +304,3 @@ Types of VCS
 		
 		=> to restore
 			- git restore "filename'
-
-	
