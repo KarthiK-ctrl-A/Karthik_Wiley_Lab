@@ -308,4 +308,184 @@ Types of VCS
 			- git branch == * indicates current
 		=>git -b - create branch
 			  -checkout - goto that branch          ######production
-			
+		=> to merge with master
+				- git merge current branch
+
+	== to push onto server
+	-- git remote add origin "https link"
+	-- git branch -M "branch name"
+
+	-- git push -u origin production - pushing contents into origin URL
+	-- git pull url - to pull the project from main branch
+
+
+	=============================================================
+	=============================================================
+	==================== 28 - 07 - 2022 =========================
+	============================================================
+	============================================================
+
+	SQL - Structured Query Language  and RDBMS
+	 
+	 - Especially MYSQL 	
+	 - security -> Authorization, Authentication
+	 - Integrity
+	 - Relational Management
+	 -  Can Handle High Volume of data
+	 - Supports Client Server architecture
+	 - can be Integrated across platforms
+	
+	-> Software engineers use MySQL to store, Manage, Manipulate data
+	
+	-> Data Scientists use as analytical tool
+
+	-> MySQL also used as Data Warehouse
+
+	-> ETL - Extract transform Load
+	 
+	-> Apache flume, sqoop, nifi
+
+
+
+-> Composite key
+	- it is a combination of columns that form primary key
+	- ex:   Create table sub(
+				name varchar(255),
+				address varchar(255),
+				age int,
+				city varchar(255)
+
+				primary key (name,address)  //* Composite key *//
+			);
+
+-> Candidate key
+	- columns/attributes which have characteristics of primary key but are not primary key
+	- columns that are unique and not null
+	- can be single or combination
+	- ex: phone number, adhaar/any other doc with ID etc
+
+-> Foreign key
+	- primary key in another table is called Foreign key
+	- Foreign key helps to relate rows of one table to rows of another table
+	- Foreign key helps to create relationships between 2 tables
+	- referential integrity is maintained by foreign key
+	- Foreign key cannot be created without referring to corresponding primary key
+	- Foreign key can contain duplicates and NULLs too.
+
+-> Referential Integrity
+	- When inserting value in Foreign key column, the value being inserted is automatically
+	  checked for its presence in corresponding primary key column, if the value exists then the
+	  value is allowed to be stored in foreign key column, if the value doesn't exist the query/command is rejected
+	- not necessary to reference only primary key, can be referenced to unique key
+
+
+-> Functional Dependency
+	- 
+
+
+
+-- NORMALIZATION 
+
+	-> It is a process of removing 'anomalies' from raw data
+	->  Anomalies
+		1. Data redundancy : Containing duplicate data
+			risk - increase in disk space
+				 - increase in processing time
+				 - 
+		2. Missing unique identification
+
+	-> more number of normal forms = better table structure = better data
+	-> hence ease in updating ,inserting , querying 
+	
+	-> \     1NF      /             - Integrity Constraints
+		\    2NF     /					- primary key
+		 \   3NF    /					- unique
+		  \	 BCNF  /
+		   \  .   /
+		    \ .  /
+		     \  /
+			  \/
+
+	-> Normal Forms :
+
+		-> 1st Normal Form : 
+			- Each cel must contain  exactly one value
+			- Multivalued attribute should be eliminated
+		
+		-> 2nd Normal Form :      ----/* Char of primary key : unique + not null */------
+			- should be in 1NF
+			- Each row must be uniquely identified using a key  
+			- No partial dependency
+		-> 3rd Normal Form :
+			- 2nd Normal Form
+			- No Functional Dependency 
+
+	->Database?
+		- Container like structure used to create and maintain tables
+
+		- SQL case insensitive
+		- ctrl+enter shortcut
+		- terminate using ; each statement
+
+
+admin
+Karthik7$
+
+-- NULL TREATMENT
+-- -- ifnull()
+		-> returns  not null value
+		accept 2 arguments
+		example - 
+			select ifnull(null,a)
+			select ifnull(b,null)
+			select ifnull(cm,e)
+			select ifnull(null, null)
+
+-- -- coalesce()
+		-> 
+-- coalesce 
+-- accept any number of args
+-- returns first not null value
+
+select coalesce(null, null, 'Dr.stange',null,null);
+select coalesce(null,'ironman','a',null,'b');
+
+-- ifnull is null replaceer
+select name,ifnull(indepyear,'N/A') as 'newindepyear' from country ;
+
+ -- coalesce is not replcaer but to fetch from assosciated columns
+ 
+ 
+-- NULL TREATMENT
+-- -- ifnull()
+-- -- coalesce()
+
+select ifnull('c','d');
+
+-- coalesce 
+-- accept any number of args
+-- returns first not null value
+
+select coalesce(null, null, 'Dr.stange',null,null);
+select coalesce(null,'ironman','a',null,'b');
+
+-- ifnull is null replaceer
+select name,ifnull(indepyear,'N/A') as 'newindepyear' from country ;
+
+ -- coalesce is not replcaer but to fetch from assosciated columns
+ 
+ desc country;
+select name,indepyear,gnpold,coalesce(indepyear,gnpOld,'Kuch Nahi Mila') from country;
+
+
+select concat('avengers',' endgame');
+
+-- activity 14
+desc country;
+select Name,ifnull(IndepYear,concat('N/A ',Name)) from country limit 5 ;
+
+-- 	I THINK USUALLY AGGREGATE FUNCTIONS WOULD GO WITH GROUP BY CLAUSE
+
+
+-- having clause to filter aggreagte rows
+
