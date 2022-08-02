@@ -136,6 +136,43 @@ desc country;
 
 select name, avg(lifeexpectancy) as le from country group by region  order by le asc limit 3; 
 
+-- ===================================================================================================================================
+-- 02-08-2022 =========================================================================================================================
+use employees;
+show tables;
+
+select first_name,count(first_name) as fn from employees group by first_name having fn>250 order by fn desc ; 
+
+
+use world;
+show tables;
+
+desc city;
+select Name from city;
+
+-- how to find duplicates in data
+select Name, count(Name)as c from city group by Name having c>1 order by c desc;
+
+-- target 
+-- find name of countries where spoken is hindi
+-- interview question
+
+desc country;
+select * from country;
+desc countrylanguage;
+
+
+select Name from country inner join countrylanguage on country.Code = countrylanguage.countrycode where Language='Hindi';
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -447,13 +447,13 @@ Karthik7$
 -- accept any number of args
 -- returns first not null value
 
-select coalesce(null, null, 'Dr.stange',null,null);
+select coalesce(null, null, 'Dr.strange',null,null);
 select coalesce(null,'ironman','a',null,'b');
 
--- ifnull is null replaceer
+-- ifnull is null replacer
 select name,ifnull(indepyear,'N/A') as 'newindepyear' from country ;
 
- -- coalesce is not replcaer but to fetch from assosciated columns
+ -- coalesce is not replacer but to fetch from associated columns
  
  
 -- NULL TREATMENT
@@ -466,13 +466,13 @@ select ifnull('c','d');
 -- accept any number of args
 -- returns first not null value
 
-select coalesce(null, null, 'Dr.stange',null,null);
-select coalesce(null,'ironman','a',null,'b');
+select coalesce(null, null, 'Dr.strange',null,null);
+select coalesce(null,'iron man','a',null,'b');
 
--- ifnull is null replaceer
+-- ifnull is null replacer
 select name,ifnull(indepyear,'N/A') as 'newindepyear' from country ;
 
- -- coalesce is not replcaer but to fetch from assosciated columns
+ -- coalesce is not replacer but to fetch from assosiated columns
  
  desc country;
 select name,indepyear,gnpold,coalesce(indepyear,gnpOld,'Kuch Nahi Mila') from country;
@@ -487,5 +487,105 @@ select Name,ifnull(IndepYear,concat('N/A ',Name)) from country limit 5 ;
 -- 	I THINK USUALLY AGGREGATE FUNCTIONS WOULD GO WITH GROUP BY CLAUSE
 
 
--- having clause to filter aggreagte rows
+-- having clause to filter aggregate rows
 
+=========================================================================
+=========================================================================
+======================================= 02 - 08 - 2022 ==================
+-------------------------------------------------------------------------
+=> 02-08-2022
+	- ENTITY RELATIONSHIP DIAGRAMS [ E-R DIAGRAM]
+
+		-> What is ER diagram ?
+			-	it is used to show the relationship among
+				entity sets
+			-	An entity set is a group of entities having         ---- A table is an entity
+			  	similar attributes
+			-	An entity is a table 
+			- 	ER diagram shows the complete logical structure of
+			  	Database
+			- 	An ER diagram can be used as blue print or 
+			  	implementing data in software application
+			-   example - see screen shot
+		
+		-> ER shapes
+
+			- Rectangle -- Entity		Table
+			- Ellipse -- attributes		column
+			- Diamond -- relationship	
+			- Lines -- connectors(Links) attribute to entity and entity to relationships
+			- double ellipses - Multivalued attribute
+			- dashed ellipse - derived attribute
+			- underlined ellipse - primary key
+			- double rectangle - weak entity
+			 
+
+		-> Components of ER model
+
+			- Entity [ weak ,strong]
+				- An entity is an object or component of data
+				- An entity is represented as a rectangle in ER diagram
+				- eg: Student and college is an entity
+				- WEAK ENTITY :-  An entity that cannot be uniquely indentified b its own attribute and relies
+								  on the relation with other identifies is called weak entity
+				
+					- represented using double rectangle
+				- 
+			- attribute [key, composite, multivalued, derived]
+				- An attribute is defines property of an Entity
+				- An attribute is represented using oval/ellipse
+				- 4 types of attributes : 
+					1- key attribute 
+					2- composite attribute
+					3- Multivalued attribute
+					4- derived attribute
+				
+				- KEY ATTRIBUTE
+					- A key attribute can uniquely identifies a row from an entity
+					- can be compared to primary key
+					- it is represented as underlined ellipse
+					- ex: roll_no in student dB
+				- COMPOSITE ATTRIBUTE 
+					- An attribute is a combination of other attributes
+					- eg: address is a composite is attribute as other attr are used such as pin, state, dist, country
+					- multilevel attributes attributes connected with attributes
+
+				- MULTIVALUED ATTRIBUTE
+					- An attribute that can hold multiple values
+					- it is represented using double oval
+					- eg: a mobile number  
+				- DERIVED ATTRIBUTE
+					- A derived attribute is one whose value is dynamic and derived from other attributes
+					- it is represented by dashed/dotted oval
+					- eg percentage if student, age of person
+			- Relation [ 1-1, 1-n, n-1, n-m]
+			-> Cardinality
+				- refers the uniqueness of data values contained in a column
+				- the lower the cardinality, the more the duplicate elements in the column
+				- the higher the cardinality, thee more unique values in the column
+				- explains frequency
+				- primary key -high cardinal
+				- gender - low cardinal
+			-> RELATIONSHIPs
+				- A relationship is represented using diamond shape in ER diagram
+				- it shows the relationship among entities 
+				- 1 to 1 relationship:
+					- when a single entity is associated with the single instance of another entity then
+					  it is called 1-1 relationship. Ex: a person has only one passport and one passport is given to one member only
+				- 1 to Many relationship:
+					- When a single instance of an entity is associated with more than one instance of another entity
+					- Then it is 1 to many relationship
+					- eg: a customer can place many orders
+				- Many to Many Relationship:
+					- when more than one instance of an entity is associated with more than one instance of another entity
+					  then it is called many to many relation
+					- eg: a student can be assigned to many projects and projects has many students
+					- always requires a three tables
+
+				
+
+
+
+
+			
+				
